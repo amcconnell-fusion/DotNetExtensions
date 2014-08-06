@@ -48,6 +48,7 @@
     <Compile Include="DecimalExtensions.cs" />
     <Compile Include="DoubleExtensions.cs" />
     <Compile Include="IntExtensions.cs" />
+    <Compile Include="Net\WebResponseExtensions.cs" />
     <Compile Include="TimeAmPm.cs" />
     <Compile Include="DateTimeExtensions.cs" />
     <Compile Include="EnumExtensions.cs" />
