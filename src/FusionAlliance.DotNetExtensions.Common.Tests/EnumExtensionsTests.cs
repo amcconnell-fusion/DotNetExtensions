@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace FusionAlliance.DotNetExtensions.Common.Tests
 {
     [TestFixture]
-    public class EnumExtensionsTest
+    public class EnumExtensionsTests
     {
         public enum DummyEnum
         {

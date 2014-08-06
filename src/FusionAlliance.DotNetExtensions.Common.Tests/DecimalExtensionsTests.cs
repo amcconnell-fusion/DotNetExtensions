@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace FusionAlliance.DotNetExtensions.Common.Tests
 {
     [TestFixture]
-    public class DecimalExtensionsTest
+    public class DecimalExtensionsTests
     {
         [Test]
         public void ToInt_truncates_fractional_portion()

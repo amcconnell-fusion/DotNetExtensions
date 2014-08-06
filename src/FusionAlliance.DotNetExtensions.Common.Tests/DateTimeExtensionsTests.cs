@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace FusionAlliance.DotNetExtensions.Common.Tests
 {
     [TestFixture]
-    public class DateTimeExtensionsTest
+    public class DateTimeExtensionsTests
     {
         [Test]
         public void AdjustHour_hour_0_to_am()

@@ -3,7 +3,7 @@
 namespace FusionAlliance.DotNetExtensions.Common.Tests
 {
     [TestFixture]
-    public class IntExtensionsTest
+    public class IntExtensionsTests
     {
         [Test]
         [TestCase(0, Result = 0)]

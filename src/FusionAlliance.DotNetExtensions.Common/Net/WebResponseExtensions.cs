@@ -8,13 +8,13 @@ namespace FusionAlliance.DotNetExtensions.Common.Net
     {
         public static byte[] ReadResponseStreamToBytes(this WebResponse response)
         {
-            long contentLength = response.ContentLength;
-            int bufferLength = contentLength < int.MaxValue ? (int)contentLength : int.MaxValue;
+            var contentLength = response.ContentLength;
+            var bufferLength = contentLength < int.MaxValue ? (int) contentLength : int.MaxValue;
             if (bufferLength < 0)
             {
                 throw new InvalidOperationException("Unable to get content length from web response.");
             }
-            byte[] buffer = new byte[bufferLength];
+            var buffer = new byte[bufferLength];
             using (var stream = response.GetResponseStream())
             {
                 if (stream == null)

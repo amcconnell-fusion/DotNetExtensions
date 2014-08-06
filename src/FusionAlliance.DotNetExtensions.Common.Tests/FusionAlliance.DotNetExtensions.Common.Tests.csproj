@@ -47,18 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collections\CollectionExtensionsTests.cs" />
-    <Compile Include="DateTimeExtensionsTest.cs" />
-    <Compile Include="DecimalExtensionsTest.cs" />
+    <Compile Include="DateTimeExtensionsTests.cs" />
+    <Compile Include="DecimalExtensionsTests.cs" />
     <Compile Include="DoubleExtensionsTests.cs" />
-    <Compile Include="EnumExtensionsTest.cs" />
-    <Compile Include="IntExtensionsTest.cs" />
+    <Compile Include="EnumExtensionsTests.cs" />
+    <Compile Include="IntExtensionsTests.cs" />
     <Compile Include="Net\WebResponseExtensionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringExtensionsTest.cs" />
+    <Compile Include="StringExtensionsTests.cs" />
     <Compile Include="TimeSpanExtensionsTests.cs" />
-    <Compile Include="UriExtensionsTest.cs" />
-    <Compile Include="Xml\XmlExtensionsTest.cs" />
-    <Compile Include="Xml\XmlUtilTest.cs" />
+    <Compile Include="UriExtensionsTests.cs" />
+    <Compile Include="Xml\XmlExtensionsTests.cs" />
+    <Compile Include="Xml\XmlUtilTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

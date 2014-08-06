@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace FusionAlliance.DotNetExtensions.Common.Tests
 {
     [TestFixture]
-    public class UriExtensionsTest
+    public class UriExtensionsTests
     {
         private const string BaseUri = "http://foo.com/api/bar";
         private const string QueryString = "?baz=123&externalmemberid=1954";

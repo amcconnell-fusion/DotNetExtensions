@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace FusionAlliance.DotNetExtensions.Common.Tests
 {
     [TestFixture]
-    public class StringExtensionsTest
+    public class StringExtensionsTests
     {
         [Test]
         [TestCase("SGVsbG8sIFdvcmxkIQ==", Result = "Hello, World!")]

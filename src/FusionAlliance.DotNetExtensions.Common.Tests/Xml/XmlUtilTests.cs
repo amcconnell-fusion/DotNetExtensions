@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace FusionAlliance.DotNetExtensions.Common.Tests.Xml
 {
     [TestFixture]
-    public class XmlUtilTest
+    public class XmlUtilTests
     {
         public class DemoObject
         {
