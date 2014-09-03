@@ -9,7 +9,10 @@ namespace FusionAlliance.DotNetExtensions.Common.Net
         public static byte[] ReadResponseStreamToBytes(this WebResponse response)
         {
             var contentLength = response.ContentLength;
+
+            // ContentLength is a long, but we cannot create a byte[] with more than Int32.MaxValue. Hence, the conversion.
             var bufferLength = contentLength < int.MaxValue ? (int) contentLength : int.MaxValue;
+
             if (bufferLength < 0)
             {
                 throw new InvalidOperationException("Unable to get content length from web response.");

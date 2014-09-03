@@ -6,6 +6,8 @@ namespace FusionAlliance.DotNetExtensions.Common.Tests
     [TestFixture]
     public class StringExtensionsTests
     {
+        // ReSharper disable ExpressionIsAlwaysNull - Required by tests
+
         [Test]
         [TestCase("SGVsbG8sIFdvcmxkIQ==", Result = "Hello, World!")]
         public string Base64Decode_returns_expected_string(string str)
@@ -16,7 +18,7 @@ namespace FusionAlliance.DotNetExtensions.Common.Tests
         [Test]
         public void Base64Decode_throws_an_exception_when_string_is_null()
         {
-            Assert.Throws<ArgumentNullException>(() => { ((string) null).Base64Decode(); });
+            Assert.Throws<ArgumentNullException>(() => ((string) null).Base64Decode());
         }
 
         [Test]
@@ -30,7 +32,7 @@ namespace FusionAlliance.DotNetExtensions.Common.Tests
         [Test]
         public void Base64Encode_throw_an_exception_when_string_is_null()
         {
-            Assert.Throws<ArgumentNullException>(() => { ((string) null).Base64Encode(); });
+            Assert.Throws<ArgumentNullException>(() => ((string) null).Base64Encode());
         }
 
         [Test]

@@ -5,6 +5,8 @@ namespace FusionAlliance.DotNetExtensions.Common.Tests
     [TestFixture]
     public class IntExtensionsTests
     {
+        // ReSharper disable ExpressionIsAlwaysNull - Required by tests
+
         [Test]
         [TestCase(0, Result = 0)]
         [TestCase(1, Result = 86400000)]

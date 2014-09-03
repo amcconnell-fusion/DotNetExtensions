@@ -11,14 +11,14 @@ namespace FusionAlliance.DotNetExtensions.Common.Tests.Net
         [SetUp]
         public void Before_each_test()
         {
-            _request = WebRequest.Create("http://www.fusionalliance.com");
-            _response = _request.GetResponse();
+            request = WebRequest.Create("http://www.fusionalliance.com");
+            response = request.GetResponse();
         }
 
-        private WebRequest _request;
-        private WebResponse _response;
-        private byte[] _responseBytes;
-        private string _responseString;
+        private WebRequest request;
+        private WebResponse response;
+        private byte[] responseBytes;
+        private string responseString;
 
         public void Dispose()
         {
@@ -30,22 +30,22 @@ namespace FusionAlliance.DotNetExtensions.Common.Tests.Net
         {
             if (isDisposing)
             {
-                _response.Dispose();
+                response.Dispose();
             }
         }
 
         [Test]
         public void ReadResponseStreamToBytes_can_return_a_buffer()
         {
-            _responseBytes = _response.ReadResponseStreamToBytes();
-            Assert.Greater(_responseBytes.Length, 0);
+            responseBytes = response.ReadResponseStreamToBytes();
+            Assert.Greater(responseBytes.Length, 0);
         }
 
         [Test]
         public void ReadResponseStreamToString_can_return_a_string()
         {
-            _responseString = _response.ReadResponseStreamToString();
-            StringAssert.IsMatch(@"\<!doctype html\>", _responseString);
+            responseString = response.ReadResponseStreamToString();
+            StringAssert.IsMatch(@"\<!doctype html\>", responseString);
         }
     }
 }
